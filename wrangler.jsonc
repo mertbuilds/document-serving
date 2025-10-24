@@ -2,8 +2,20 @@
   "name": "document-serving",
   "compatibility_date": "2025-04-03",
   "assets": {
-    "directory": "./dist/",
-    "not_found_handling": "single-page-application"
+    "directory": "./dist/"
   },
-  "main": "./worker/index.ts"
+  "main": "./worker/index.ts",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "document-serving",
+      "database_id": "8bf71f3e-d966-4632-841f-846728130da3"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "document-serving"
+    }
+  ]
 }
